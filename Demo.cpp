@@ -22,24 +22,33 @@ int main() {
   std::vector<double> identity = {1, 0, 0, 0, 1, 0, 0, 0, 1};
   std::vector<double> arr = {3, 0, 0, 0, 3, 0, 0, 0, 3};
   Matrix a{identity, 3, 3};  // constructor taking a vector and a matrix size
-  cout << a << endl;
+  //cout << a << " first line " << endl;
   /* prints [1 0 0]
             [0 1 0]
             [0 0 1]*/
-
-  cout << (-a) << endl;
+  //cout << (-a) << " second line " << endl;
   /* prints [-1 0 0]
             [0 -1 0]
             [0 0 -1]*/
-  cout << (3*a) << endl;
+  //cout << (a*3) << " third line " << endl;
+  //cout << (a*-3) << " third line " << endl;
+  cout << "**************************************" << endl;
+  cout << "REgular matrix \n" << a << endl;
+  cout << " A++ \n" << (a++) <<  endl;
+  cout << " ++A \n" << (++a) <<  endl;
+  cout << " A++ \n" << (a--) <<  endl;
+  cout << " ++A \n" << (--a) <<  endl;
+  //cout << "**************************************" << endl;
   /* prints [3 0 0]
             [0 3 0]
             [0 0 3]*/
 
   Matrix b{arr, 3, 3};
-  a *= -3;
-  cout << (a+b) << endl;  // prints the 0 matrix
-  cout << (b-a) << endl;
+  //cout << (a > b) << " third line " << endl;
+  //cout << (a < b) << " third line " << endl;
+  //a *= -3;
+  //cout << (a+b) << " forth line " << endl;  // prints the 0 matrix
+  //cout << (b-a) << " fifth line " << endl;
   /* prints [6 0 0]
             [0 6 0]
             [0 0 6]*/
